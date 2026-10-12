@@ -1,0 +1,118 @@
+/* Copyright (c) 2026 ed0ard. All rights reserved. */
+.buff-extract-inspect-link {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 6px;
+  padding: 0 10px;
+  font-size: 12px;
+  color: #959595;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  background: #fff;
+  vertical-align: middle;
+  white-space: nowrap;
+  user-select: none;
+  box-sizing: border-box;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+}
+
+.buff-extract-buy-stack--below {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+  vertical-align: middle;
+}
+
+.buff-extract-inspect-link.buff-extract-inspect-link--buy-orange,
+.buff-extract-inspect-link.buff-extract-inspect-link--youpin-list {
+  margin-left: 0;
+  flex-shrink: 0;
+  color: #fff;
+  background: #ff9933;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: normal;
+}
+
+.buff-extract-inspect-link.buff-extract-inspect-link--buy-orange:hover,
+.buff-extract-inspect-link.buff-extract-inspect-link--youpin-list:hover {
+  color: #fff;
+  background: #ff9933;
+  border: none;
+}
+
+.buff-extract-inspect-link.buff-extract-inspect-link--buy-orange.is-ok,
+.buff-extract-inspect-link.buff-extract-inspect-link--youpin-list.is-ok {
+  color: #fff;
+  background: #22a06b;
+  border: none;
+}
+
+.buff-extract-inspect-link--youpin {
+  margin-left: 8px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.buff-extract-youpin-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 6px;
+}
+
+.buff-extract-inspect-link:hover:not(.buff-extract-inspect-link--buy-orange):not(
+    .buff-extract-inspect-link--youpin-list
+  ) {
+  color: #0086ff;
+  border-color: #0086ff;
+}
+
+.buff-extract-inspect-link.is-loading {
+  opacity: 0.65;
+  pointer-events: none;
+}
+
+.buff-extract-inspect-link.is-ok:not(.buff-extract-inspect-link--buy-orange):not(
+    .buff-extract-inspect-link--youpin-list
+  ) {
+  color: #22a06b;
+  border-color: #22a06b;
+}
+
+.buff-extract-inspect-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 48px;
+  transform: translateX(-50%) translateY(12px);
+  z-index: 2147483646;
+  max-width: min(90vw, 520px);
+  padding: 10px 16px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.82);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s, transform 0.2s;
+  word-break: break-all;
+}
+
+.buff-extract-inspect-toast.is-visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.buff-extract-inspect-toast.is-error {
+  background: rgba(180, 40, 40, 0.92);
+}

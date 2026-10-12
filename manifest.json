@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "饰品检视链接提取",
+  "version": "1.1.12",
+  "description": "在BUFF、悠悠有品页面提取游戏中检视链接，一键复制",
+  "homepage_url": "https://github.com/ed0ard",
+  "author": "ed0ard",
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://buff.163.com/*",
+        "https://www.youpin898.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "host_permissions": [
+    "https://buff.163.com/*",
+    "https://www.youpin898.com/*"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["page-bridge.js", "icons/link-icon-template.webp"],
+      "matches": ["https://www.youpin898.com/*", "https://buff.163.com/*"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "buff-inspect-link-extractor@local.dev",
+      "strict_min_version": "109.0"
+    }
+  }
+}
