@@ -30,9 +30,11 @@
 
 - Firefox：在地址栏输入 `about:debugging#/runtime/this-firefox`，按下回车键。
 
-3. **开启开发人员模式**（仅 Edge 和 Chrome 需要此步骤）
+3. **开启开发人员模式**（Firefox 不需要这步）
 
-&nbsp;&nbsp;&nbsp;&nbsp;打开页面右上角的 **开发人员模式** 开关。
+- Edge：打开页面左下角的 **开发人员模式** 开关。
+
+- Chrome：打开页面右上角的 **开发人员模式** 开关。
 
 4. **从压缩包安装扩展**
 
