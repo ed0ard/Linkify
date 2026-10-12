@@ -23,11 +23,11 @@ Extract and Copy CS2 in-game inspect links on BUFF163 and YouPin898.
 
 2. **Open the extensions page**  
 
-   - Edge: paste `edge://extensions` in the address bar and press Enter.
+- Edge: paste `edge://extensions` in the address bar and press Enter.
    
-   - Chrome: paste `chrome://extensions` in the address bar and press Enter.
+- Chrome: paste `chrome://extensions` in the address bar and press Enter.
    
-   - Firefox: paste `about:debugging` in the address bar and press Enter, then click **This Firefox**.
+- Firefox: paste `about:debugging#/runtime/this-firefox` in the address bar and press Enter.
 
 3. **Turn on Developer mode** (Only Edge & Chrome need this step)  
 
@@ -35,7 +35,7 @@ Extract and Copy CS2 in-game inspect links on BUFF163 and YouPin898.
 
 4. **Install from the zip**  
 
-   - Edge & Chrome: **Drag** `Linkify.zip` onto the extensions page and **release**.  
-                    Confirm if the browser asks to add extension.
+- Edge & Chrome: **Drag** `Linkify.zip` onto the extensions page and **release**.  
+Confirm if the browser asks to add extension.
 
-   - Firefox: Click **Load Temporary Add-on…** and select `Linkify.zip`.
+- Firefox: Click **Load Temporary Add-on…** and select `Linkify.zip`.
