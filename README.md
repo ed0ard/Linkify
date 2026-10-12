@@ -29,9 +29,11 @@ Extract and Copy CS2 in-game inspect links on BUFF163 and YouPin898.
    
 - Firefox: paste `about:debugging#/runtime/this-firefox` in the address bar and press Enter.
 
-3. **Turn on Developer mode** (Only Edge & Chrome need this step)  
+3. **Turn on Developer mode** (Firefox doesn't need this step)  
 
-   Top-right toggle **Developer mode**.  
+- Edge: Bottom-left toggle **Developer mode**.  
+
+- Chrome: Top-right toggle **Developer mode**.  
 
 4. **Install from the zip**  
 
